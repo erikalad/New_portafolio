@@ -1,0 +1,15 @@
+.porcentajes{
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-porcentajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iconos{
+    height: 70px;
+}

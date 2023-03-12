@@ -3,7 +3,6 @@ import { Layout, Menu  } from 'antd';
 import { Link } from 'react-router-dom';
 import { SlRocket } from "react-icons/sl";
 import {BsCodeSlash} from "react-icons/bs";
-import SubMenu from 'antd/es/menu/SubMenu';
 import { TbFileCertificate} from "react-icons/tb";
 import './MenuDesplegable.css'
 import {TiContacts} from 'react-icons/ti'
@@ -33,112 +32,31 @@ export default function MenuDesplegable() {
 
       <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" className='menu'>
 
-        <Menu.Item key="/dashboard" icon={  <SlRocket />}>
+        <Menu.Item key="/" icon={<SlRocket />}>
            
           <span>Sobre Mi</span>
-          <Link to="/dashboard"></Link>
+          <Link to="/"></Link>
         </Menu.Item>
 
-        <Menu.Item key="/perfil" icon={  <BsCodeSlash />}>
+        <Menu.Item key="/proyectos" icon={  <BsCodeSlash />}>
            
            <span>Proyectos</span>
-           <Link to="/perfil"></Link>
+           <Link to="/proyectos"></Link>
          </Menu.Item>
 
 
-         <Menu.Item key="/perfil" icon={  <TbFileCertificate />}>
+         <Menu.Item key="/certificados" icon={  <TbFileCertificate />}>
            
            <span>Certificados</span>
-           <Link to="/perfil"></Link>
+           <Link to="/certificados"></Link>
          </Menu.Item>
 
-         <Menu.Item key="/perfil" icon={  <TiContacts />}>
+         <Menu.Item key="/contactame" icon={  <TiContacts />}>
            
            <span>Contactame</span>
-           <Link to="/perfil"></Link>
+           <Link to="/contactame"></Link>
          </Menu.Item>
-        
-
-
-       {/*  <SubMenu icon={ <SlPeople />} title="Usuarios" >
-
-            
-
-                <Menu.Item icon={<SlPencil /> }>
-                     
-                     <span>Modificar</span>
-                     <Link to="/dashoboard-user-modificar"></Link>
-                 </Menu.Item>
-
-                <Menu.Item icon={<SlTrash /> }>
-                   
-                    <span>Borrar</span>
-                    <Link to="/dashoboard-user-borrar"></Link>
-                </Menu.Item>
       
-        </SubMenu>
-
-
-        <SubMenu icon={< SlEvent />} title="Eventos" >
-
-            <Menu.Item icon={<SlPlus /> }>
-            
-                <span>Agregar</span>
-                <Link to="/dashoboard-eventos-agregar"></Link>
-            </Menu.Item>
-
-            <Menu.Item icon={<SlPencil /> }>
-                
-                <span>Modificar</span>
-                <Link to="/dashoboard-eventos-modificar"></Link>
-            </Menu.Item>
-
-            <Menu.Item icon={<SlTrash /> }>
-            
-                <span>Borrar</span>
-                <Link to="/dashoboard-eventos-borrar"></Link>
-            </Menu.Item>
-
-        </SubMenu>
-
-
-
-
-        <SubMenu icon={< BsPersonBadge />} title="Guias" >
-
-            <Menu.Item icon={<SlPlus /> }>
-            
-                <span>Agregar</span>
-                <Link to="/dashoboard-guias-agregar"></Link>
-            </Menu.Item>
-
-            <Menu.Item icon={<SlPencil /> }>
-                
-                <span>Modificar</span>
-                <Link to="/dashoboard-guias-modificar"></Link>
-            </Menu.Item>
-
-
-        </SubMenu>  
-
-
-        <SubMenu icon={< FaTicketAlt />} title="Tickets" >
-
-            <Menu.Item icon={<SlPencil /> }>
-
-                <span>Modificar</span>
-                <Link to="/dashoboard-ticket-modificar"></Link>
-            </Menu.Item>
-
-
-            </SubMenu>  
-
-        <Menu.Item icon={  <FiLogOut />}>
-            <span></span>
-          
-        </Menu.Item> */}
-
-     
       </Menu>
 
 
