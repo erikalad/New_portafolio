@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => (
   <header>
-    <h1 className="sandbox__header">Embla Carousel Drag Free React</h1>
+    <h1 className="sandbox__header">Utilizando las siguientes herramientas para desarrollo y visualización</h1>
   </header>
 )
 

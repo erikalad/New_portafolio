@@ -1,0 +1,26 @@
+.carrousel {
+    display: flex;
+    width:95%;
+    height: 200px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin:2rem
+}
+
+.carrousel img{ 
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.carrousel img:hover{
+    cursor: crosshair;
+    margin: 2rem;
+    height: 100%;
+    width: 100px;
+    opacity: 1;
+/*     filter: contrast(120%); */
+}
+

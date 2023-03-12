@@ -2,29 +2,23 @@ import React from 'react';
 import './SobreMi.css'
 import { Progress, Space } from 'antd';
 /* import CanvasJSReact from './../../Assest/canvasjs.react'; */
-import ant from './../../Assest/skills/ant.svg'
+
 import react from './../../Assest/skills/React.png'
 import redux from './../../Assest/skills/Redux.png'
-import bs from './../../Assest/skills/Bootstrap.png'
 import js from './../../Assest/skills/JS.png'
-import cloudinary from './../../Assest/skills//cloudinary.png'
-import figma from './../../Assest/skills/figma.png'
 import html from './../../Assest/skills/html.png'
-import git from './../../Assest/skills/git.png'
 import css from './../../Assest/skills/css.png'
 import express from './../../Assest/skills/express.png'
 import node from './../../Assest/skills/node.png'
-import postman from './../../Assest/skills/postman.png'
-import paypal from './../../Assest/skills/paypal.png'
 import sequelize from './../../Assest/skills/sequelize.webp'
+import postgres from './../../Assest/skills/post.png'
 import ts from './../../Assest/skills/ts.png'
-import ReactDOM from 'react-dom/client'
 import EmblaCarousel from './EmblaCarousel'
 import Header from './Header'
-import Footer from './Footer'
 import '../css/base.css'
 import '../css/sandbox.css'
 import '../css/embla.css'
+import Galery from './Galery'
 
 /* var CanvasJSChart = CanvasJSReact.CanvasJSChart; */
 const OPTIONS = { dragFree: true, containScroll: 'trimSnaps' }
@@ -71,37 +65,72 @@ const SobreMi = () => {
       <div className='contenedor-porcentajes'>
       <Space wrap className='porcentajes'>
         <Progress type="dashboard" percent={75} gapDegree={20} />
-        <img className='iconos' src={js} alt='ant'/>
+        <img className='iconos' src={js} alt='JavaScript'/>
       </Space>
+
+
       <Space wrap className='porcentajes'>
         <Progress type="dashboard" percent={75} gapDegree={20} />
-        <img className='iconos' src={ant} alt='ant'/>
+        <img className='iconos' src={html} alt='HTML'/>
       </Space>
+
       <Space wrap className='porcentajes'>
         <Progress type="dashboard" percent={75} gapDegree={20} />
-        <img className='iconos' src={react} alt='ant'/>
+        <img className='iconos' src={css} alt='CSS'/>
       </Space>
+
       <Space wrap className='porcentajes'>
         <Progress type="dashboard" percent={75} gapDegree={20} />
-        <img className='iconos' src={redux} alt='ant'/>
+        <img className='iconos' src={react} alt='REACT'/>
       </Space>
+
       <Space wrap className='porcentajes'>
         <Progress type="dashboard" percent={75} gapDegree={20} />
-       
-      </Space>
-      <Space wrap className='porcentajes'>
-        <Progress type="dashboard" percent={75} gapDegree={20} />
-        <img className='iconos' src={bs} alt='ant'/>
+        <img className='iconos' src={redux} alt='REDUX'/>
       </Space>
       </div>
 
-      <main className="sandbox">
+    
+
+
+     <h3>BackEnd</h3>
+     <br></br> 
+      <div className='contenedor-porcentajes'>
+
+      <Space wrap className='porcentajes'>
+        <Progress type="dashboard" percent={75} gapDegree={20} />
+        <img className='iconos' src={node} alt='NODE.JS'/>
+      </Space>
+
+
+      <Space wrap className='porcentajes'>
+        <Progress type="dashboard" percent={75} gapDegree={20} />
+        <img className='iconos' src={express} alt='EXPRESS'/>
+      </Space>
+
+      <Space wrap className='porcentajes'>
+        <Progress type="dashboard" percent={75} gapDegree={20} />
+        <img className='iconos' src={sequelize} alt='SEQUELIZE'/>
+      </Space>
+
+      <Space wrap className='porcentajes'>
+        <Progress type="dashboard" percent={75} gapDegree={20} />
+        <img className='iconos' src={postgres} alt='POSTGRESQL'/>
+      </Space>
+      </div>
+
+    {/*   <main className="sandbox">
         <Header />
         <section className="sandbox__carousel">
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </section>
-        <Footer />
-      </main>
+   
+      </main> */}
+
+    <div>
+      <h3>Utilizando las siguientes herramientas de poducción y visualización</h3>
+      <Galery />
+    </div>
      
     </div>
   );
