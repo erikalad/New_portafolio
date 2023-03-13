@@ -13,12 +13,12 @@ import node from './../../Assest/skills/node.png'
 import sequelize from './../../Assest/skills/sequelize.webp'
 import postgres from './../../Assest/skills/post.png'
 import ts from './../../Assest/skills/ts.png'
-import EmblaCarousel from './EmblaCarousel'
-import Header from './Header'
+
 import '../css/base.css'
 import '../css/sandbox.css'
 import '../css/embla.css'
 import Galery from './Galery'
+
 
 /* var CanvasJSChart = CanvasJSReact.CanvasJSChart; */
 const OPTIONS = { dragFree: true, containScroll: 'trimSnaps' }
@@ -130,6 +130,8 @@ const SobreMi = () => {
     <div>
       <h3>Utilizando las siguientes herramientas de poducción y visualización</h3>
       <Galery />
+     {/*   <Carrousel/> */}
+     {/* <Carro/> */}
     </div>
      
     </div>
